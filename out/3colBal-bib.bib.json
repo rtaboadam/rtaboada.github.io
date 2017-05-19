@@ -1,0 +1,96 @@
+{
+  "_preamble": "",
+  "_comments": "",
+  "bereg201521": {
+    "id": "Bereg201521",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Bereg",
+        "given": "Sergey"
+      },
+      {
+        "family": "Hurtado",
+        "given": "Ferran"
+      },
+      {
+        "family": "Kano",
+        "given": "Mikio"
+      },
+      {
+        "family": "Korman",
+        "given": "Matias"
+      },
+      {
+        "family": "Lara",
+        "given": "Dolores"
+      },
+      {
+        "family": "Seara",
+        "given": "Carlos"
+      },
+      {
+        "family": "Silveira",
+        "given": "Rodrigo I."
+      },
+      {
+        "family": "Urrutia",
+        "given": "Jorge"
+      },
+      {
+        "family": "Verbeek",
+        "given": "Kevin"
+      }
+    ],
+    "title": "Balanced partitions of 3-colored geometric sets in the plane ",
+    "container-title": "Discrete Applied Mathematics ",
+    "issued": {
+      "date-parts": [
+        [
+          "2015"
+        ]
+      ]
+    },
+    "issn": "0166-218X",
+    "keywords": "Ham-sandwich theorem ",
+    "URL": "http://www.sciencedirect.com/science/article/pii/S0166218X14004326",
+    "DOI": "10.1016/j.dam.2014.10.015",
+    "page": "21 - 32",
+    "page-first": "21",
+    "volume": "181",
+    "_line": "science.bib:1"
+  },
+  "lo1994algorithms": {
+    "id": "lo1994algorithms",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Lo",
+        "given": "Chi-Yuan"
+      },
+      {
+        "family": "Matou&scaron;ek",
+        "given": "Ji&rcaron;&iacute;"
+      },
+      {
+        "family": "Steiger",
+        "given": "William"
+      }
+    ],
+    "title": "Algorithms for ham-sandwich cuts",
+    "container-title": "Discrete &amp; Computational Geometry",
+    "issued": {
+      "date-parts": [
+        [
+          "1994"
+        ]
+      ]
+    },
+    "publisher": "Springer",
+    "page": "433-452",
+    "page-first": "433",
+    "volume": "11",
+    "issue": "1",
+    "_line": "science.bib:19"
+  }
+}

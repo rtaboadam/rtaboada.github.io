@@ -1,6 +1,10 @@
-~ begin bibliography { .bib-numeric; cite-style:"numeric:'[',']',', '" ; caption:"1" ; data-style:"numeric" ; data-style:'madoko-numeric';  }
+~ begin bibliography { .bib-numeric; cite-style:"numeric:'[',']',', '" ; caption:"2" ; data-style:"numeric" ; data-style:'madoko-numeric';  }
 ~ begin bibitem {id:"Bereg201521"; cite-year:"2015"; cite-authors:"Bereg et al."; cite-authors-long:"Bereg, Hurtado, Kano, Korman, Lara, Seara, et al."; cite-label:"1"; caption:"Balanced partitions of 3-colored geometric sets in the plane &nl;Bereg, Hurtado, Kano, Korman, Lara, Seara, et al., 2015"; data-line:"science.bib:1"; searchterm:"Balanced%20partitions%20of%203colored%20geometric%20sets%20in%20the%20plane%20Bereg%2C%20Hurtado%2C%20Kano%2C%20Korman%2C%20Lara%2C%20Seara%2C%20et%20al.%2C%202015"; spellcheck:"false"; bibitem-label:"\[1\]"}
 \/Sergey Bereg, Ferran Hurtado, Mikio Kano, Matias Korman, Dolores Lara, Carlos Seara, Rodrigo I.&nbsp;Silveira, Jorge Urrutia, and Kevin Verbeek. &ldquo;Balanced Partitions of 3-Colored Geometric Sets in the Plane .&rdquo; _Discrete Applied Mathematics _ 181: 21–32. 2015. doi:[10.1016/j.dam.2014.10.015](https://dx.doi.org/10.1016/j.dam.2014.10.015){.bib-doi}.
+~ end bibitem
+
+~ begin bibitem {id:"Bespamyatnikh2000"; cite-year:"2000"; cite-authors:"Bespamyatnikh et al."; cite-authors-long:"Bespamyatnikh, Kirkpatrick, and Snoeyink"; cite-label:"2"; caption:"Generalizing Ham Sandwich Cuts to Equitable Subdivisions &nl;Bespamyatnikh, Kirkpatrick, and Snoeyink, 2000"; data-line:"10.1007%2Fs004540010065.bib:1"; searchterm:"Generalizing%20Ham%20Sandwich%20Cuts%20to%20Equitable%20Subdivisions%20Bespamyatnikh%2C%20Kirkpatrick%2C%20and%20Snoeyink%2C%202000"; spellcheck:"false"; bibitem-label:"\[2\]"}
+\/S.&nbsp;Bespamyatnikh, D.&nbsp;Kirkpatrick, and J.&nbsp;Snoeyink. &ldquo;Generalizing Ham Sandwich Cuts to Equitable Subdivisions .&rdquo; _Discrete &amp; Computational Geometry_ 24 (4): 605–622. 2000. doi:[10.1007/s004540010065](https://dx.doi.org/10.1007/s004540010065){.bib-doi}.
 ~ end bibitem
 
 ~ end bibliography

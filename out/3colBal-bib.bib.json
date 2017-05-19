@@ -92,5 +92,41 @@
     "volume": "11",
     "issue": "1",
     "_line": "science.bib:19"
+  },
+  "bespamyatnikh2000": {
+    "id": "Bespamyatnikh2000",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Bespamyatnikh",
+        "given": "S."
+      },
+      {
+        "family": "Kirkpatrick",
+        "given": "D."
+      },
+      {
+        "family": "Snoeyink",
+        "given": "J."
+      }
+    ],
+    "title": "Generalizing Ham Sandwich Cuts to Equitable Subdivisions ",
+    "container-title": "Discrete &amp; Computational Geometry",
+    "issued": {
+      "date-parts": [
+        [
+          "2000"
+        ]
+      ]
+    },
+    "issn": "1432-0444",
+    "abstract": "We prove a generalization of the famous Ham Sandwich Theorem for the plane. Given gn  red points and gm  blue points in the plane in general position, there exists an equitable subdivision  of the plane into g  disjoint convex polygons, each of which contains n  red points and m  blue points. For g=2  this problem is equivalent to the Ham Sandwich Theorem in the plane. We also present an efficient algorithm for constructing an equitable subdivision.",
+    "URL": "http://dx.doi.org/10.1007/s004540010065",
+    "DOI": "10.1007/s004540010065",
+    "page": "605-622",
+    "page-first": "605",
+    "volume": "24",
+    "issue": "4",
+    "_line": "10.1007%2Fs004540010065.bib:1"
   }
 }

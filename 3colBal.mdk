@@ -1,27 +1,22 @@
 [INCLUDE=presentation]
 Title         : Particiones balanceadas de conjuntos geometricos 3 coloreados en el plano
 Author        : +@Bereg201521
-Affiliation   : Microsoft Research
-Email         : daan@microsoft.com
 Reveal Theme  : simple
 Beamer Theme  : singapore
 Bibliography: science.bib
+Cite Style: natural
+Bibliography: 10.1007%2Fs004540010065.bib
 
 [TITLE]
 
 # Contenido
 [TOC]
 
-# Definiciones
+# 
 ~ Definition 
   Sea $S$ un conjunto finitos de objetos geometricos particionados en clases o *colores*.
   Sea $S'\subseteq S$ decimos que esta **balanceado** si contiene la misma cantidad de elementos
   de $S$ de cada uno de los colores.
-  {.fragment}
-~
-~ Definition {caption: "Arreglo Simple";}
-  Dado el arreglo, este no contiene lineas paralelas y no mas de dos lineas intersectan
-  en un punto
   {.fragment}
 ~
 
@@ -36,9 +31,13 @@ cada mitad.
 ~ End Column
 ~ Column
 ![Discrete_ham_sandwich_cut]
-
 ~
 ~ End Columns
+
+## Variaciones
+* Dados $gn$ puntos rojos y $gm$ azules en el plano en posición general, existe una subdivision
+en el plano en $g$ poligonos convexos ajenos, los cuales tienen $n$ puntos rojos y $m$ azules 
+  - {color: purple} [+@Bespamyatnikh2000] 
 
 ~ End Vertical
 
@@ -66,6 +65,15 @@ cada mitad.
 
 # Celdas el arreglos coloreados
 
+## Definiciones
+Sea $L$ = $R \cup G \cup B$ un conjunto de lineas en el plano talque $R$, $G$, $B$ son ajenos
+~ Definition {caption: "Arreglo Simple";}
+  Dado el arreglo, este no contiene lineas paralelas y no mas de dos lineas intersectan
+  en un punto
+  {.fragment}
+~
+
+
 ## En el plano
 ~ Theorem
   Sea $L$ un conjunto 3 coloreado en el plano que induce un arreglo simple $A(L)$, talque
@@ -75,7 +83,21 @@ que cada color aparece al menos una ves. Entonces existe una *cara completa* en 
 ~ Lemma
  Considera un ciclo simple donde cada vertice es coloreado con rojo, verde o azul. Entonces
  $n_{rg} \equiv n_{rb} \equiv n_{gb} \mod 2$
+ {.fragment}
 ~
+
+~ center
+   **$2n_{r} = 2n_{rr} + n_{rg} + n_{rb}$**
+  {.fragment}
+~
+
+
+
+~ Slide
+![example_Art_1]
+~
+
+[example_Art_1]: images/example_Art_1.jpg "example_Art_1" { width:100%; height:100% }
 
 ## En dimensiones más grandes
 ~ Theorem
@@ -86,7 +108,13 @@ en $A(L)$, donde cada color aparece al menos una vez. Entonces existe una *cara 
 ~ Lemma
 Considera una triangulación $T$ en $\mathbb{S}^{d-1}$ donde cada vertice es coloreado con un color
 \[$d$\]. Entonces $n_{s} \equiv 0(mod\ 2)$ para todos los *buenos tipos* $S$, o
-$n_{s} \equiv 1 (mod\ 2)$ para todos los *buenos tipos* $S$  
+$n_{s} \equiv 1 (mod\ 2)$ para todos los *buenos tipos* $S$
+{.fragment} 
+~
+
+~ center
+$2n_{s} = n_{s_{1}} + n_{s_{2}} + 2\sum\limits_{x \in S}n_{S\uplus\{x\}}$
+{.fragment}
 ~
 
 # Conjunto de puntos 3 coloreados y cuñas balanceadas
@@ -104,7 +132,107 @@ de cada color de $S$
 Sea un conjunto 3 coloreado *balanceado* de 6$n$ puntos en $\mathbb{R}^{2}$ en posición
 general. Entonces existe una **cuña** que contiene exactamente n puntos de cada color de $S$
 ~
+~ End Slide
 
+~Begin Slide
+### Definiciones
+* A la cuña que satisface el teorema se la llama **bisector** (*bisecting*)
+
+* {.fragment} Se asume que los puntos en $S$ tienen distintas x, y cordenadas
+
+
+* {.fragment} Para dos distintos puntos $a$, $b$ se denota como $l(a,b)$ la linea que pasa por los puntos
+
+~ Begin Center
+  $A = \{ l(p_{i},p_{j}) | p_{i},p_{j} \in S, i \neq j \}$
+{.fragment}
+~ End Center
+
+~ End Slide
+~ Begin Slide
+Consideramos una linea vertical $l$ que no contenga a ningún punto de $S$.
+Dado cualquier punto $p$ en $l$ definimos un ordenamiento $\sigma_{p}$ como sigue:
+
+1) Obtenemos todas las lineas $l(p,q), q \in S$
+2) Ordenamos las lineas por pendientes 
+~ End Slide
+~ Begin Slide 
+![order_by_p]
+[order_by_p]: images/order_by_p.jpg "order_by_p" { width:80%; height:100%  }
+~ End Slide
+
+~ Begin Slide
+  * Por construcción cualquier intervalo consecutivo  $\{p_{i},p_{i+1},...,p_{j}\}$
+  de un ordenamiento corresponde a un conjunto de lineas cuyos puntos pueden ser cubiertos
+  por una cuña con $p$ como vertice
+~ End Slide
+
+~ Begin Slide
+![00]
+[00]: images/00.png "00" { width:100%; height:100% }
+~ End Slide
+
+~ Begin Slide
+![1-00]
+~ End Slide
+
+~ Begin Slide
+![1-01]
+~ End Slide
+[1-01]: images/1-01.png "1-01" { width:100%; height:100% }
+
+[1-00]: images/1-00.png "1-00" { width:100%; height:100% }
+
+~ Begin Slide
+Sea un ordenamiento $\sigma_{p} = (p_{1},...,p_{6n})$ se construye una curva poligonal como sigue:
+
+1) Sea $g_{k}$ y $b_{k}$ el numero de puntos verde y azul en el conjunto $S(p,k) = \{p_{k},..,p_{k+3n-1}\}$
+de $3n$ puntos.
+2) Definimos el punto lattice $q_{k}$ := ($b_{k}-n$,$g_{k}-n$)
+3) $\phi(\sigma) = (q_{1},...,q_{6n},-q_{1},...,-q_{6},q_{1})$
+~ End Slide
+
+
+
+~ Begin Slide
+![change_ord1]
+
+[change_ord1]: images/change_ord1.svg "change_ord1" {width: 100%; height: 100% }
+~ End Slide
+
+~ Begin Slide
+![change_ord2]
+  
+[change_ord2]: images/change_ord2.svg "change_ord2" { width:100%; height:100% }
+~ End Slide
+
+~ Begin Slide
+* Número de giro
+![WindingNumber_1000]
+
+[WindingNumber_1000]: images/WindingNumber_1000.gif "WindingNumber_1000" { width:100%; height:100% }
+
+~ End Slide
+
+~ Begin Slide
+![max_order]
+
+[max_order]: images/max_order.jpg "max_order" { width:80%; height:100% }
+
+~ End Slide
+
+~ Begin Slide
+![2-01]
+~ End Slide
+
+~Begin Slide
+![2-02]
+[2-02]: images/2-02.png "2-02" { width:100%; height: 100% }
+[2-01]: images/2-01.png "2-01" { width:100%; height:90% }
+
+~ End Slide
+
+~ Begin Slide
 ~ Corollary
 Sea $L$ un conjunto 3 coloreado balanceado de 6$n$ lineas en $\mathbb{R}^2$ que induce un 
 arreglo simple. Entonces, siemple existe un segmento que intersecta exactamente $n$ lineas
@@ -134,11 +262,21 @@ que contiene exactamente $k$ puntos de cada color.
 ~ Begin Vertical
 ~ Begin Slide
 ~ Definition {caption: "L-linea"}
+Una $L$-linea con esquina en $q \in \mathbb{R}^2$ es la unión de dos diferentes
+rayos, uno vertica y otro horizontl. Dividen el plano en dos mitades
 ~
 ~ Definition {caption: "Posicion general en el Lattice"}
+  Es cuando para cada linea vertica y horizontal, esta solo pasa por un vertice.
 ~
 ~ End Slide
 ~ End Vertical
+
+~ begin Slide
+![l-line-segment]
+
+[l-line-segment]: images/l-line-segment.jpg "l-line-segment" { width:80%; height: 100% }
+
+~ End Slide
 
 ~ Begin Slide
 ~ Theorem
@@ -156,14 +294,26 @@ no trivial.
 ~
 ~ End Slide
 
+~ Begin Slide
+  * Cierre convexo ortogonal
+![Orthogonal-convex-hull]
+
+[Orthogonal-convex-hull]: images/Orthogonal-convex-hull.svg "Orthogonal-convex-hull" { width:100%; height: 100% }
+
+~ End Slide
+
+# Bibliografia
+[BIB]
 
 
-[non_trivial_cut04]: images/non_trivial_cut04.svg "non_trivial_cut04" { width:100%; height: 100% }
+[Discrete_ham_sandwich_cut]: images/Discrete_ham_sandwich_cut.svg "Discrete_ham_sandwich_cut" { width:auto; max-width:90% }
 
-[non_trivial_cut03]: images/non_trivial_cut03.svg "non_trivial_cut03" { width:100%; height: 100% }
+[non_trivial_cut00]: images/non_trivial_cut00.svg "non_trivial_cut00" { width:100%; height:100% }
 
-[non_trivial_cut02]: images/non_trivial_cut02.svg "non_trivial_cut02" { width:100%; height: 100% }
+[non_trivial_cut01]: images/non_trivial_cut01.svg "non_trivial_cut01" { width:100%; height:100% }
 
-[non_trivial_cut01]: images/non_trivial_cut01.svg "non_trivial_cut01" { width:100%; height: 100% }
+[non_trivial_cut02]: images/non_trivial_cut02.svg "non_trivial_cut02" { width:100%; height:100% }
 
-[non_trivial_cut00]: images/non_trivial_cut00.svg "non_trivial_cut00" { width:100%; height: 100% }
+[non_trivial_cut03]: images/non_trivial_cut03.svg "non_trivial_cut03" { width:100%; height:100% }
+
+[non_trivial_cut04]: images/non_trivial_cut04.svg "non_trivial_cut04" { width:100%; height:100% }
